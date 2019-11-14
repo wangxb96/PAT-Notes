@@ -1,18 +1,18 @@
-//D½øÖÆµÄA+B
+//Dè¿›åˆ¶çš„A+B
 #include<cstdio>
 int main()
 {
 	int a,b,c;
 	scanf("%d%d%d",&a,&b,&c);
 	int sum=a+b;
-	int ans[31],num=0; //ans´æ·ÅD½øÖÆµÄÃ¿Ò»Î»
-	do{//½øÖÆ×ª»» 
-		ans[num++]=sum%d;
-		sum/=d;
+	int ans[31],num=0; //anså­˜æ”¾Dè¿›åˆ¶çš„æ¯ä¸€ä½
+	do{//è¿›åˆ¶è½¬æ¢ 
+		ans[num++]=sum%c;
+		sum/=c;
 	} while(sum!=0);
 	for(int i=num-1;i>=0;i--)
 	{
-		printf("%d",ans[i]);//´Ó¸ßÎ»µ½µÍÎ»Êä³ö 
+		printf("%d",ans[i]);//ä»é«˜ä½åˆ°ä½ä½è¾“å‡º 
 	}
 	return 0;
  } 
